@@ -22,7 +22,7 @@ In alteration to the regular https://www.asam.net/license[license terms], ASAM a
 
 
 :antora_mapping: true
-ifndef::use-antora-rules[]
+ifdef::use-antora-rules[]
 
 [preface]
 include::general_docs/foreword.adoc[leveloffset=+1]

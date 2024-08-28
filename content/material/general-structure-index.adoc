@@ -1,9 +1,6 @@
 = Material
 
-:antora_mapping: title
-include::Introduction.adoc[leveloffset=+2]
-include::Fileformat.adoc[leveloffset=+2]
-include::Metadata.adoc[leveloffset=+2]
-include::Material-parameters.adoc[leveloffset=+2]
-
-:!antora_mapping:
+include::Introduction.adoc[leveloffset=+1]
+include::Fileformat.adoc[leveloffset=+1]
+include::Metadata.adoc[leveloffset=+1]
+include::Material-parameters.adoc[leveloffset=+1]
