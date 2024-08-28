@@ -4,7 +4,7 @@
 site:
   title: ASAM OpenMATERIAL
   url: https://martinfiebig.github.io/OpenMATERIAL/
-  start_page: asamopenmaterial:specification:index.adoc 
+  start_page: asamopenmaterial:specification:index.adoc
 # end::site[]
 urls: # Creates a redirect for the newest version to the link "latest"
   latest_version_segment_strategy: redirect:to
