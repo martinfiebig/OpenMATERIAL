@@ -21,7 +21,7 @@ jobs:
       uses: peter-evans/repository-dispatch@v3
       with:
         # token: ${{ secrets.MACHINE_USER_PAT }}
-        token: ${{ secrets.ASAM_test }}
+        token: ${{ secrets.Martin_ASAM_test }}
         event-type: antora-build-trigger
         repository: martinfiebig/openmaterial-antora-generator # OpenSimulationInterface/osi-antora-generator
         client-payload: '{"src": "${{ github.repository }}", "ref": "${{ github.ref }}", "sha": "${{ github.sha }}", "head_ref": "${{ github.head_ref }}"}'
