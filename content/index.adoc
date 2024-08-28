@@ -7,8 +7,8 @@ include::{root-path}_config.adoc[]
 
 // DO NOT CHANGE!!!
 //
-//:titleoffset!:
-//:sectnums!:
+:titleoffset!:
+:sectnums!:
 
 
 [IMPORTANT]
