@@ -44,7 +44,7 @@ include::geometry/object-classes.adoc[leveloffset=+2]
 include::geometry/File_format_support.adoc[leveloffset=+2]
 include::geometry/Metadata.adoc[leveloffset=+2]
 include::geometry/Performance.adoc[leveloffset=+2]
-endif::[]
+
 include::material/general-structure-index.adoc[leveloffset=+1]
 
 
