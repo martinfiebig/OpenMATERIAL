@@ -57,5 +57,6 @@ jobs:
       - name: json-yaml-validate
         id: json-yaml-validate
         uses: GrantBirki/json-yaml-validate@vX3.2.1 # replace with the latest version
-        files: ./examples/*.xoma
-        json_schema: ./schemas/asset_schema.json
+        with:
+          files: ./examples/*.xoma
+          json_schema: ./schemas/asset_schema.json
