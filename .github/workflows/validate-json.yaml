@@ -42,9 +42,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'examples/**'
-      - 'schemas/**'
   #pull_request:
   #workflow_dispatch:
 
