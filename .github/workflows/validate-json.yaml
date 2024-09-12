@@ -4,6 +4,8 @@
 name: Validate JSON schemas for assets and materials
 
 on:
+  push:
+    branches: [main, test-validation]
   pull_request:
     paths:
       - 'examples/**'
