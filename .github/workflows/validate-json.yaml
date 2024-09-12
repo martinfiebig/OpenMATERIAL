@@ -9,34 +9,16 @@ on:
       - 'examples/**'
       - 'schemas/**'
 
-permissions:
-  contents: read
-  pull-requests: write
-
 jobs:
-  json-yaml-validate:
+  validate-config:
     name: JSON schema validation
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Validate asset JSON schemas
-        uses: GrantBirki/json-yaml-validate@v3.2.1
+      - name: validate
+        uses: ammarlakis/action-ajv@master
         with:
-          files: ./examples/*.xoma
-          json_schema: ./schemas/asset_schema.json
-          yaml_exclude_regex: ./examples/*.xoma
-          comment: "true"
+          schema: ./schemas/asset_schema.json
+          data: ./examples/*.xoma
+          allErrors: true
 
-      - name: Validate material JSON schemas
-        uses: GrantBirki/json-yaml-validate@v3.2.1
-        with:
-          files: ./examples/*.xomp
-          json_schema: ./schemas/material_schema.json
-
-      - name: Validate electromagnetic material properties JSON schemas
-        uses: GrantBirki/json-yaml-validate@v3.2.1
-        with:
-          files: ./examples/*_emp.xompt
-          json_schema: ./schemas/material_emp_schema.json
