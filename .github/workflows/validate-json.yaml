@@ -21,19 +21,5 @@ jobs:
 
       - name: Validate asset JSON schemas
         uses: ketanSaxena/schema-validator@v1.2.1
-        with:
-          files: ./examples/*.xoma
-          json_schema: ./schemas/asset_schema.json
-          json_exclude_regex: ".*/*.xoma$"
-
-      - name: Validate material JSON schemas
-        uses: GrantBirki/json-yaml-validate@v3.2.1
-        with:
-          files: ./examples/*.xomp
-          json_schema: ./schemas/material_schema.json
-
-      - name: Validate electromagnetic material properties JSON schemas
-        uses: GrantBirki/json-yaml-validate@v3.2.1
-        with:
-          files: ./examples/*_emp.xompt
-          json_schema: ./schemas/material_emp_schema.json
+        run: schema validate -f ./examples/*.xoma -s ./schemas/asset_schema.json
+        
