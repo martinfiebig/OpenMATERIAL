@@ -21,5 +21,6 @@ jobs:
 
       - name: Validate asset JSON schemas
         uses: ketanSaxena/schema-validator@v1.2.1
+
+      - name: Action!
         run: schema validate -f ./examples/*.xoma -s ./schemas/asset_schema.json
-        
