@@ -1,0 +1,21 @@
+# Validate JSON schema files
+# Source: https://github.com/GrantBirki/json-yaml-validate
+# Forked from: https://github.com/marketplace/actions/json-yaml-validate
+name: Validate JSON CUSTOM
+
+on:
+  push:
+    branches: [main, test-validation]
+  pull_request:
+    paths:
+      - 'examples/**'
+      - 'schemas/**'
+
+jobs:
+  json-yaml-validate:
+    name: JSON schema validation
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Validate stuff
+        run: schema validate -f ./examples/*.xoma -s ./schemas/asset_schema.json
