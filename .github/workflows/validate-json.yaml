@@ -23,6 +23,7 @@ jobs:
           files: ./examples/*.xoma
           json_schema: ./schemas/asset_schema.json
           yaml_exclude_regex: ./examples/*.xoma
+          comment: true
 
       - name: Validate material JSON schemas
         uses: GrantBirki/json-yaml-validate@v3.2.1
