@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Validate asset JSON schemas
-        uses: GrantBirki/json-yaml-validate@v3.2.1
+        uses: ketanSaxena/schema-validator@v1.2.1
         with:
           files: ./examples/*.xoma
           json_schema: ./schemas/asset_schema.json
