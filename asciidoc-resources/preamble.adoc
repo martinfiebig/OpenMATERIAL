@@ -6,7 +6,7 @@
 :copyright: ASAM e.V. {docyear}
 :toclevels: 4
 :sectnumlevels: 4
-:sectnums:
+//:sectnums:
 // do not render tocs of includes
 // :no_child_tocs:
 :icons: font
