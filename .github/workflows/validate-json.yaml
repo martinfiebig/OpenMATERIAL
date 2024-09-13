@@ -20,10 +20,10 @@ jobs:
     steps:
       - name: Validate workflows
         uses: ammarlakis/action-ajv@master
-      with:
-        schema: ./schemas/asset_schema.json
-        data: ./examples/*.xoma
-        allErrors: true
+        with:
+         schema: ./schemas/asset_schema.json
+         data: ./examples/*.xoma
+         allErrors: true
 
 
 
