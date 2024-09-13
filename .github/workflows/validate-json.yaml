@@ -12,16 +12,18 @@ on:
       - 'schemas/**'
 
 jobs:
-  verify-json-validation:
+  validate-github-actions-workflows:
     name: Validate GitHub Actions workflows
+
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
       - name: Validate workflows
-        run: npm install jsonlint -g
-
-      - name: validate
-        run: jsonlint ./examples/*.xoma
+        uses: ammarlakis/action-ajv@master
+        with:
+          schema: ./schemas/asset_schema.json
+          data: ./examples/*.xoma
+          allErrors: false
 
 
 
