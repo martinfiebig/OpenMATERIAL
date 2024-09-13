@@ -1,7 +1,7 @@
 # Validate JSON schema files
 # Source: https://github.com/GrantBirki/json-yaml-validate
 # Forked from: https://github.com/marketplace/actions/json-yaml-validate
-name: Validate JSON schemas for assets and materials
+name: Validate JSON custom
 
 on:
   push:
@@ -12,14 +12,58 @@ on:
       - 'schemas/**'
 
 jobs:
-  json-yaml-validate:
-    name: JSON schema validation
+  validate-github-actions-workflows:
+    name: Validate GitHub Actions workflows
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v4
+      - name: Validate workflows
+        uses: dsanders11/json-schema-validate-action
+        with:
+          schema: ./schemas/asset_schema.json
+          files: ./examples/*.xoma
 
-      - name: Validate asset JSON schemas
-        uses: ketanSaxena/schema-validator@v1.2.1
-      - name: Action!
-        run: schema validate -f ./examples/*.xoma -s ./schemas/asset_schema.json
+
+
+#name: Validate JSON schemas for assets and materials
+
+#on:
+#  pull_request:
+#    paths:
+#      - 'examples/**'
+ #     - 'schemas/**'
+#
+#jobs:
+#  json-schema-validation:
+#    name: JSON schema validation
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#      - uses: actions/checkout@v1
+#
+#      - name: Validate asset JSON schemas
+#        uses: nhalstead/validate-json-action@0.1.3
+#        with:
+#          schema: ./schemas/asset_schema.json
+#          jsons: ./examples/*.xoma
+#
+
+
+
+
+
+#      - name: Validate material JSON schemas
+#        uses: nhalstead/validate-json-action@0.1.3
+#        with:
+#          schema: ./schemas/material_schema.json
+#          jsons: ./examples/*.xomp
+#
+#      - name: Validate electromagnetic material properties JSON schemas
+#        uses: nhalstead/validate-json-action@0.1.3
+#        with:
+#          schema: ./schemas/material_emp_schema.json
+#          jsons: ./examples/*_emp.xompt
+#
+#
+####
