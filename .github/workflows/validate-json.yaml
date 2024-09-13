@@ -12,18 +12,16 @@ on:
       - 'schemas/**'
 
 jobs:
-  validate-github-actions-workflows:
+  verify-json-validation:
     name: Validate GitHub Actions workflows
-
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
       - name: Validate workflows
-        uses: ammarlakis/action-ajv@master
-        with:
-         schema: ./schemas/asset_schema.json
-         data: ./examples/*.xoma
-         allErrors: true
+        uses: docker://orrosenblatt/validate-json-action:latest
+        env:
+          INPUT_SCHEMA: ./schemas/asset_schema.json
+          INPUT_JSONS: ./examples/*.xoma
 
 
 
