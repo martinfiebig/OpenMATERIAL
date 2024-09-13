@@ -12,34 +12,26 @@ on:
       - 'schemas/**'
 
 jobs:
-  validate-config:
+  validate-github-actions-workflows:
     name: Validate GitHub Actions workflows
-
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout files
         uses: actions/checkout@v1
 
-      - name: Validate asset JSON schemas
-        uses: ammarlakis/action-ajv@master
+      - name: Check for any changed workflows
+        uses: tj-actions/changed-files@v41
         with:
-          schema: ./schemas/asset_schema.json
-          data: ./examples/*.xoma
-          allErrors: true
+          files: |
+              .github/workflows/**
 
-      - name: Validate material JSON schemas
-        uses: ammarlakis/action-ajv@master
+      - name: Validate workflows
+        if: steps.check-for-changed-workflows.outputs.any_changed == 'true'
+        uses: dsanders11/json-schema-validate-action
         with:
-          schema: ./schemas/material_schema.json
-          data: ./examples/*.xomp
-          allErrors: true
-
-      - name: Validate electromagnetic material properties JSON schemas
-        uses: ammarlakis/action-ajv@master
-        with:
-          schema: ./schemas/material_emp_schema.json
-          data: ./examples/*_emp.xompt
-          allErrors: true
+         schema: https://json.schemastore.org/github-workflow.json
+         files: .github/workflows/**.yml
 
 
 
