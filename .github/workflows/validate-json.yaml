@@ -18,10 +18,10 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Validate workflows
-        uses: docker://orrosenblatt/validate-json-action:latest
-        env:
-          INPUT_SCHEMA: ./schemas/asset_schema.json
-          INPUT_JSONS: ./examples/*.xoma
+        run: npm install jsonlint -g
+
+      - name: validate
+        run: jsonlint ./schemas/asset_schema.json
 
 
 
