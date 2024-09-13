@@ -23,7 +23,7 @@ jobs:
         with:
           schema: ./schemas/asset_schema.json
           data: ./examples/*.xoma
-          allErrors: false
+          allErrors: true
 
 
 
