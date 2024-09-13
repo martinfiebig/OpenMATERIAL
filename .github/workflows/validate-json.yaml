@@ -1,7 +1,7 @@
 # Validate JSON schema files
 # Source: https://github.com/GrantBirki/json-yaml-validate
 # Forked from: https://github.com/marketplace/actions/json-yaml-validate
-name: Validate JSON custom
+name: Validate JSON schemas for assets and materials
 
 on:
   push:
@@ -12,16 +12,34 @@ on:
       - 'schemas/**'
 
 jobs:
-  verify-json-validation:
+  validate-config:
     name: Validate GitHub Actions workflows
+
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Validate workflows
-        run: npm install jsonlint -g
+      - name: Checkout files
+        uses: actions/checkout@v1
 
-      - name: validate
-        run: jsonlint ./examples/*.xoma --validate ./schemas/asset_schema.json
+      - name: Validate asset JSON schemas
+        uses: ammarlakis/action-ajv@master
+        with:
+          schema: ./schemas/asset_schema.json
+          data: ./examples/*.xoma
+          allErrors: true
+
+      - name: Validate material JSON schemas
+        uses: ammarlakis/action-ajv@master
+        with:
+          schema: ./schemas/material_schema.json
+          data: ./examples/*.xomp
+          allErrors: true
+
+      - name: Validate electromagnetic material properties JSON schemas
+        uses: ammarlakis/action-ajv@master
+        with:
+          schema: ./schemas/material_emp_schema.json
+          data: ./examples/*_emp.xompt
+          allErrors: true
 
 
 

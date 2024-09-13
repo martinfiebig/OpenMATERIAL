@@ -8,7 +8,7 @@
     "material_version": "1.0.0",
     "id": "bea5a5f266e74b938a8cd773992dc09c",
     "name": "aluminum_emp",
-    "description": "Electromagnetic properties of aluminum"
+    "description": "Electromagnetic properties of aluminum
   },
   "electromagnetic_properties": [
     [500e-9, 293.0, 50.0, 0.000001256665, 0.0, -56.0, 24.0],
