@@ -1,6 +1,6 @@
 # Validate JSON schema files
-# Source: https://github.com/GrantBirki/json-yaml-validate
-# Forked from: https://github.com/marketplace/actions/json-yaml-validate
+# Source: https://github.com/dsanders11/json-schema-validate-action
+# Forked from: https://github.com/marketplace/actions/json-schema-validate
 name: Validate JSON schemas for assets and materials
 
 on:
