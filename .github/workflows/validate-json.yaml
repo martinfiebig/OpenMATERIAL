@@ -21,7 +21,7 @@ jobs:
         run: npm install jsonlint -g
 
       - name: validate
-        run: jsonlint ./examples/*.xoma -v ./schemas/asset_schema.json
+        run: jsonlint ./examples/*.xoma --validate ./schemas/asset_schema.json
 
 
 
