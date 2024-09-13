@@ -23,6 +23,7 @@ jobs:
         with:
           files: ./examples/*.xoma
           schema: ./schemas/asset_schema.json
+          print-valid-files: true
 
 
 
