@@ -20,11 +20,23 @@ jobs:
       - name: Checkout files
         uses: actions/checkout@v1
 
-      - name: Validate workflows
+      - name: Validate asset JSON schemas
         uses: dsanders11/json-schema-validate-action@v1.2.0
         with:
          schema: ./schemas/asset_schema.json
          files: ./examples/*.xoma
+
+      - name: Validate material JSON schemas
+        uses: dsanders11/json-schema-validate-action@v1.2.0
+        with:
+          schema: ./schemas/material_schema.json
+          files: ./examples/*.xomp
+
+      - name: Validate electromagnetic material properties JSON schemas
+        uses: dsanders11/json-schema-validate-action@v1.2.0
+        with:
+          schema: ./schemas/material_emp_schema.json
+          files: ./examples/*_emp.xompt
 
 
 
