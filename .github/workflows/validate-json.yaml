@@ -19,11 +19,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Validate workflows
-        uses: walbo/validate-json@v1.1.0
-        with:
-          files: ./examples/*.xoma
-          schema: ./schemas/asset_schema.json
-          print-valid-files: true
+        uses: ammarlakis/action-ajv@master
+      with:
+        schema: ./schemas/asset_schema.json
+        data: ./examples/*.xoma
+        allErrors: true
 
 
 
