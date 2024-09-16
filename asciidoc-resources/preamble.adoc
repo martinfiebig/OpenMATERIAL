@@ -8,7 +8,7 @@
 :sectnumlevels: 4
 :sectnums:
 // do not render tocs of includes
-:no_child_tocs:
+:no_child_tocs: false
 :icons: font
 :doctype: article
 // source highlighting
