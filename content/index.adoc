@@ -46,7 +46,9 @@ include::geometry/geometry-index.adoc[leveloffset=+1]
 ** xref:geometry/Performance.adoc[leveloffset=+2]
 
 include::material/general-structure-index.adoc[leveloffset=+1]
+
 :sectnums!:
+
 ** xref:material/Introduction.adoc[]
 ** xref:material/Fileformat.adoc[]
 ** xref:material/Metadata.adoc[]
