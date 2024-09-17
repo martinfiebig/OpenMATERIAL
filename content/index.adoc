@@ -47,14 +47,10 @@ include::geometry/geometry-index.adoc[leveloffset=+1]
 
 include::material/general-structure-index.adoc[leveloffset=+1]
 
-:sectnums!:
-
-** xref:material/Introduction.adoc[]
-** xref:material/Fileformat.adoc[]
-** xref:material/Metadata.adoc[]
-** xref:material/Material-parameters.adoc[]
-
-:sectnums:
+** xref:material/Introduction.adoc[leveloffset=+2]
+** xref:material/Fileformat.adoc[leveloffset=+2]
+** xref:material/Metadata.adoc[leveloffset=+2]
+** xref:material/Material-parameters.adoc[leveloffset=+2]
 
 :sectnums!:
 == Annexes
