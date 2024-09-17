@@ -1,0 +1,8 @@
+= Geometry
+
+include::geometry/Introduction.adoc[]
+include::geometry/General.adoc[]
+include::geometry/object-classes.adoc[]
+include::geometry/File_format_support.adoc[]
+include::geometry/Metadata.adoc[]
+include::geometry/Performance.adoc[]
