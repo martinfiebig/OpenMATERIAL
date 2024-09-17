@@ -45,8 +45,7 @@ include::geometry/geometry-index.adoc[leveloffset=+1]
 ** xref:geometry/Metadata.adoc[leveloffset=+1]
 ** xref:geometry/Performance.adoc[leveloffset=+1]
 
-//include::material/general-structure-index.adoc[leveloffset=+1]
-== Material
+include::material/title.adoc[leveloffset=+1]
 
 :!antora_mapping:
 
