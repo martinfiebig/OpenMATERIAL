@@ -1,5 +1,7 @@
 = Material
 
+:!antora_mapping:
+
 include::Introduction.adoc[leveloffset=+2]
 include::Fileformat.adoc[leveloffset=+2]
 include::Metadata.adoc[leveloffset=+2]
