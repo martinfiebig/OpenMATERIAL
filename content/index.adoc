@@ -47,19 +47,19 @@ include::geometry/geometry-index.adoc[leveloffset=+1]
 
 include::material/general-structure-index.adoc[leveloffset=+1]
 
+:!antora_mapping:
+
+include::material/Introduction.adoc[leveloffset=+2]
+include::material/Fileformat.adoc[leveloffset=+2]
+include::material/Metadata.adoc[leveloffset=+2]
+include::material/Material-parameters.adoc[leveloffset=+2]
+
+:antora_mapping: true
+
 ** xref:material/Introduction.adoc[leveloffset=+1]
 ** xref:material/Fileformat.adoc[leveloffset=+1]
 ** xref:material/Metadata.adoc[leveloffset=+1]
 ** xref:material/Material-parameters.adoc[leveloffset=+1]
-
-:!antora_mapping:
-
-//include::material/Introduction.adoc[leveloffset=+1]
-//include::material/Fileformat.adoc[leveloffset=+1]
-//include::material/Metadata.adoc[leveloffset=+1]
-//include::material/Material-parameters.adoc[leveloffset=+1]
-
-:antora_mapping: true
 
 :sectnums!:
 == Annexes
