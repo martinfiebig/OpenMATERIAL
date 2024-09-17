@@ -40,14 +40,17 @@ include::geometry/geometry-index.adoc[leveloffset=+1]
 
 ** xref:geometry/Introduction.adoc[leveloffset=+2]
 ** xref:geometry/General.adoc[leveloffset=+2]
-*** xref:geometry/object-classes.adoc[leveloffset=+2]
+** xref:geometry/object-classes.adoc[leveloffset=+2]
 ** xref:geometry/File_format_support.adoc[leveloffset=+2]
 ** xref:geometry/Metadata.adoc[leveloffset=+2]
 ** xref:geometry/Performance.adoc[leveloffset=+2]
 
 include::material/general-structure-index.adoc[leveloffset=+1]
 
-
+** xref:Introduction.adoc[leveloffset=+1]
+** xref:Fileformat.adoc[leveloffset=+1]
+** xref:Metadata.adoc[leveloffset=+1]
+** xref:Material-parameters.adoc[leveloffset=+1]
 
 :sectnums!:
 == Annexes
