@@ -52,8 +52,6 @@ include::material/general-structure-index.adoc[leveloffset=+1]
 ** xref:material/Metadata.adoc[leveloffset=+1]
 ** xref:material/Material-parameters.adoc[leveloffset=+1]
 
-include::geometry-index_content-folder.adoc[leveloffset=+1]
-
 :sectnums!:
 == Annexes
 [appendix]
