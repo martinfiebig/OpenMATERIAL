@@ -54,10 +54,10 @@ include::material/general-structure-index.adoc[leveloffset=+1]
 
 :!antora_mapping:
 
-include::material/Introduction.adoc[leveloffset=+2]
-include::material/Fileformat.adoc[leveloffset=+2]
-include::material/Metadata.adoc[leveloffset=+2]
-include::material/Material-parameters.adoc[leveloffset=+2]
+include::material/Introduction.adoc[leveloffset=+1]
+include::material/Fileformat.adoc[leveloffset=+1]
+include::material/Metadata.adoc[leveloffset=+1]
+include::material/Material-parameters.adoc[leveloffset=+1]
 
 :antora_mapping: true
 
