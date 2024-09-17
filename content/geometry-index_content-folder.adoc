@@ -1,8 +1,8 @@
 = Geometry
 
-include::geometry/Introduction.adoc[]
-include::geometry/General.adoc[]
-include::geometry/object-classes.adoc[]
-include::geometry/File_format_support.adoc[]
-include::geometry/Metadata.adoc[]
-include::geometry/Performance.adoc[]
+include::geometry/Introduction.adoc[leveloffset=+2]
+include::geometry/General.adoc[leveloffset=+2]
+include::geometry/object-classes.adoc[leveloffset=+2]
+include::geometry/File_format_support.adoc[leveloffset=+2]
+include::geometry/Metadata.adoc[leveloffset=+2]
+include::geometry/Performance.adoc[leveloffset=+2]
