@@ -1,5 +1,6 @@
 = Geometry
 
+== Geometry
 include::Introduction.adoc[leveloffset=+2]
 include::General.adoc[leveloffset=+2]
 include::object-classes.adoc[leveloffset=+2]
