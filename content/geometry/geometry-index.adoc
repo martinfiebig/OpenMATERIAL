@@ -1,6 +1,6 @@
 = Geometry
 
-:!antora_mapping:
+:antora_mapping!:
 
 include::Introduction.adoc[leveloffset=+1]
 include::General.adoc[leveloffset=+1]
