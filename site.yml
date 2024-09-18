@@ -4,9 +4,6 @@ site:
   # the 404 page and sitemap files only get generated when the url property is set
   url: "https://martinfiebig.github.io/openmaterial-antora-generator/asamopenmaterial/latest/specification/"
   start_page: asamopenmaterial:specification:index.adoc
-
-nav:
-  - modules/specification/nav_openmaterial.adoc
 # end::site[]
 urls: # Creates a redirect for the newest version to the link "latest"
   latest_version_segment_strategy: redirect:to
