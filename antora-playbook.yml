@@ -63,7 +63,6 @@ asciidoc:
 
 antora:
   extensions:
-    - require: '@antora/lunr-extension'
     - require: './asam-antora-extensions/asam-antora_extension.js'
       numbered_titles: true
       section_number_style: 'iso'
