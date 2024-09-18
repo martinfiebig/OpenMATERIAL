@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Validate asset JSON schemas
-        uses: ewilliams-zoot/jsv-action@v1
+        uses: ewilliams-zoot/jsv-action@v1.1.4
         with:
            key-and-file: 'user:./examples/*.xoma'
            key-and-schema: 'user:./schemas/asset_schema.json'
