@@ -19,12 +19,10 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Validate asset JSON schemas
-        uses: vanekj/validate-json-action@v1.0.0
+        uses: lyubick/action-YAML-schema-validator@v2
         with:
-          schema: ./schemas/asset_schema.json
-          pattern: ./examples/*.xoma
-          show_result_in_summary: "true"
-          use_ajv_formats: "true"
+          json-schema-file: ./schemas/asset_schema.json
+          yaml-json-file-dir: ./examples/*.xoma
 
       - name: Validate material JSON schemas
         uses: dsanders11/json-schema-validate-action@v1.2.0
