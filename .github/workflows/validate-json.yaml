@@ -22,7 +22,7 @@ jobs:
         uses: docker://orrosenblatt/validate-json-action:latest
         env:
           INPUT_SCHEMA: ./schemas/asset_schema.json
-          INPUT_JSONS: ./examples/*.xoma
+          INPUT_JSONS: ./examples/**.xoma
 
       - name: Validate material JSON schemas
         uses: dsanders11/json-schema-validate-action@v1.2.0
