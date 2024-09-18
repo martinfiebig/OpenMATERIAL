@@ -19,10 +19,10 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Validate asset JSON schemas
-        uses: docker://orrosenblatt/validate-json-action:latest
-        env:
-          INPUT_SCHEMA: ./schemas/asset_schema.json
-          INPUT_JSONS: ./examples/*.xoma
+        uses: walbo/validate-json@v1.1.0
+        with:
+          files: ./examples/*.xoma
+          schema: ./schemas/asset_schema.json
 
       - name: Validate material JSON schemas
         uses: dsanders11/json-schema-validate-action@v1.2.0
