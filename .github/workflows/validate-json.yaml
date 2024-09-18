@@ -19,12 +19,12 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Validate asset JSON schemas
-        uses: anyone-developer/anyone-validate-json@main
+        uses: ammarlakis/action-ajv@master
         with:
-          file-extension: '.xoma'
-          ignore-files: 'README.md'
-          ignore-directories: '.git'
-          read-path: ',/examples'
+          schema: ./schemas/asset_schema.json
+          data: ./examples/*.xoma
+          allErrors: true
+          verbose: true
 
       - name: Validate material JSON schemas
         uses: dsanders11/json-schema-validate-action@v1.2.0
