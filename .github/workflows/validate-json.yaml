@@ -23,6 +23,8 @@ jobs:
         with:
           schema: ./schemas/asset_schema.json
           pattern: ./examples/*.xoma
+          show_result_in_summary: "true"
+          use_ajv_formats: "true"
 
       - name: Validate material JSON schemas
         uses: dsanders11/json-schema-validate-action@v1.2.0
