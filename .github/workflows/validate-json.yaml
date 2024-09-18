@@ -19,11 +19,10 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Validate asset JSON schemas
-        uses: ammarlakis/action-ajv@master
+        uses: dsanders11/json-schema-validate-action@v1.2.0
         with:
           schema: ./schemas/asset_schema.json
-          data: ./examples/*.xoma
-          allErrors: true
+          files: ./examples/*.xoma
           verbose: true
 
       - name: Validate material JSON schemas
