@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Validate asset JSON schemas
-        uses: cardinalby/schema-validator-action@v3.1.1
+        uses: cardinalby/schema-validator-action@v3
         with:
           file: './examples/*.xoma'
           schema: './schemas/asset_schema.json'
