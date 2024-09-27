@@ -69,4 +69,4 @@ antora:
       loft: true
       local_to_global_references: false
       bibliography: false
-      orphan_exceptions: repo
+      orphan_exceptions: repo/
