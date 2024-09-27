@@ -65,7 +65,7 @@ antora:
     - require: './asam-antora-extensions/asam-antora_extension.js'
       add_to_navigation: true
       unlisted_pages_heading: "Lost and fouound"
-      orphan_exceptions: '/./'
+      orphan_exceptions: '/pages/*/'
       numbered_titles: true
       section_number_style: 'iso'
       alternate_xref_style: 'full'
