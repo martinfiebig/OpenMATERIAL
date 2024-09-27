@@ -69,5 +69,5 @@ antora:
       loft: true
       local_to_global_references: false
       bibliography: false
-      orphan_exceptions: /content/
+      orphan_exceptions: /content/**/*.adoc
 #      orphan_exceptions: /repo/**
