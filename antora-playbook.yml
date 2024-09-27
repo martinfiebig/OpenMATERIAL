@@ -66,8 +66,8 @@ antora:
       add_to_navigation: true
       unlisted_pages_heading: "Lost and fouound"
       orphan_exceptions:
-      - /geometry/
-      - /material/
+      - '/geometry/'
+      - '/material/'
       - '*.adoc'
       numbered_titles: true
       section_number_style: 'iso'
