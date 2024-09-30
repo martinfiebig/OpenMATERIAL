@@ -65,10 +65,12 @@ antora:
     - require: './asam-antora-extensions/asam-antora_extension.js'
       add_to_navigation: true
       unlisted_pages_heading: "Lost and fouound"
-      orphan_exceptions: '/pages/'
+      orphan_exceptions: '/geometry/'
       numbered_titles: true
       section_number_style: 'iso'
       alternate_xref_style: 'full'
       loft: true
       local_to_global_references: false
       bibliography: false
+    - require: '.asam-antora-extensions/antora/orphan-pages/orphan-pages.js'
+      enabled: false
