@@ -63,8 +63,6 @@ antora:
   extensions:
     - require: '@antora/lunr-extension'
     - require: './asam-antora-extensions/asam-antora_extension.js'
-      add_to_navigation: true
-      unlisted_pages_heading: "Lost and fouound"
       orphan_exceptions: '/'
       numbered_titles: true
       section_number_style: 'iso'
