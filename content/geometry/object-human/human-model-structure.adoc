@@ -7,7 +7,7 @@
 legend
 Skeleton
 |_Root_Bone (T)
-  |_ [[xref:human-model-structure.adoc#_hip_t Hip (T)]]Hip (T)
+  |_ [[../geometry/object-classes.html#_hip_t Hip (T)]]
     |_ Sitting_Point (T)
     |_ Lower_Spine (T)
       |_ Upper_Spine (T)
