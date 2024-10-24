@@ -9,7 +9,7 @@ Skeleton
 |_Root_Bone (T)
   |_ Hip (T)
     |_ Sitting_Point (T)
-    |_ Lower_Spine (T)
+    |_ [[human-model-structure.html#Lower_Spine]]Lower_Spine (T)
       |_ Upper_Spine (T)
         |_ Neck (T)
           |_ Head (T)
