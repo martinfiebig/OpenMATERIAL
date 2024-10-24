@@ -4,8 +4,9 @@
 name: Publish with Antora to GitHub Pages
 on:
   push:
-    branches: [main, current_01]
+    branches: [main]
   # Allows you to run this workflow manually from the Actions tab
+  pull_request:
   workflow_dispatch:
 concurrency:
   group: github-pages
