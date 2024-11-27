@@ -3,8 +3,14 @@
 
 ifndef::include-only-once[]
 :root-path: ../
+:imagesdir: {root-path}/_images
+:includedir: {root-path}/_images
 include::{root-path}_config.adoc[]
 endif::[]
+
+[#fig-openmaterial-overview_test02]
+.Overview of ASAM OpenMATERIAL file formats and data flow
+image::overview.png[,1100]
 
 The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document.
 For dated references, only the edition cited applies.

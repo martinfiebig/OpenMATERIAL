@@ -3,9 +3,15 @@
 
 ifndef::include-only-once[]
 :root-path: ../
+:imagesdir: {root-path}/_images
+:includedir: {root-path}/_images
 include::{root-path}_config.adoc[]
 endif::[]
 
 {THIS_STANDARD} is backwards compatible with {THIS_STANDARD}
+
+[#fig-openmaterial-overview_test01]
+.Overview of ASAM OpenMATERIAL file formats and data flow
+image::overview.png[,1100]
 
 
