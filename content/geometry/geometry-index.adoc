@@ -1,5 +1,12 @@
 = Geometry
 
+ifndef::include-only-once[]
+:root-path: ../
+:imagesdir: {root-path}/_images
+:includedir: {root-path}/_images
+include::{root-path}_config.adoc[]
+endif::[]
+
 * xref:geometry/introduction.adoc[leveloffset=+1]
 * xref:geometry/general.adoc[leveloffset=+1]
 * xref:geometry/object-classes.adoc[leveloffset=+1]
@@ -7,3 +14,7 @@
 * xref:geometry/asset-schema.adoc[leveloffset=+1]
 * xref:geometry/mapping-schema.adoc[leveloffset=+1]
 
+
+[#fig-openmaterial-overview_test05]
+.Overview of ASAM OpenMATERIAL file formats and data flow
+image::overview.png[,1100]
