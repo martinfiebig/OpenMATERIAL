@@ -1,5 +1,5 @@
 # Component name (without spaces!). All content repositories with the same component name are merged in Antora.
-name: core
+name: asamopenmaterial
 # CENTRAL DOCUMENT ONLY!!! Display name of the component. Define only once per component!
 title: ASAM OpenMATERIAL
 version:
@@ -35,8 +35,7 @@ asciidoc: # Sets global AsciiDoc attributes that are applied for every page of t
     asamBibliography: 'specification:bibliography.bib'
 
 nav:
-  - specification/nav-openmaterial-core.adoc
-  - specification/nav_loft.adoc
+  - modules/specification/nav-openmaterial.adoc
 
 # Add more items here as required.
 # Recommended: One navigation file per document/repository!

@@ -1,5 +1,0 @@
-
-//Deprecated, use 'OpenMATERIAL/content/nav-openmaterial-core.adoc' instead.
-
-// Do not delete this file
-
