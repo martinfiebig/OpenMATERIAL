@@ -1,3 +1,0 @@
-= Indexes
-
-This has worked! Great!
