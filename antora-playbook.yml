@@ -17,9 +17,7 @@ content:
     start_path: .antora
     tags: [v*,V*]
   - url: .
-    start_path: .antora/core
-  - url: .
-    start_path: .antora/spec
+    start_path: .antora
 # end::content[]
 
 ui:
