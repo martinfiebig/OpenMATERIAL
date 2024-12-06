@@ -46,4 +46,6 @@ xref:loft/list-of-figures.adoc[leveloffset=+1]
 :sectnums!:
 xref:loft/list-of-tables.adoc[leveloffset=+1]
 
+xref:core:index.adoc[leveloffset=+1]
+
 :!antora_mapping:
