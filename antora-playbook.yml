@@ -4,7 +4,7 @@
 site:
   title: ASAM OpenMATERIAL
   url: https://asam-ev.github.io/OpenMATERIAL/
-  start_page: asamopenmaterial-core:specification:index.adoc
+  start_page: asamopenmaterial-core::index.adoc
 # end::site[]
 urls: # Creates a redirect for the newest version to the link "latest"
   latest_version_segment_strategy: redirect:to
@@ -17,7 +17,7 @@ content:
     start_path: .antora
     tags: [v*,V*]
   - url: .
-    start_path: .antora/core
+    start_path: .antora/core/specification
   - url: .
     start_path: .antora/spec
 # end::content[]
