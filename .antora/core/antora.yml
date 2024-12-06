@@ -1,5 +1,5 @@
 # Component name (without spaces!). All content repositories with the same component name are merged in Antora.
-name: asamopenmaterial-core
+name: core
 # CENTRAL DOCUMENT ONLY!!! Display name of the component. Define only once per component!
 title: ASAM OpenMATERIAL
 version:
