@@ -63,29 +63,29 @@ jobs:
       with:
         path: ./repo/site
 
-  deploy:
-    # Run if it was not triggered from remote OR the remote source was master or main.
-    if: ${{ github.event_name != 'repository_dispatch' || contains(github.event.client_payload.ref, 'master') || contains(github.event.client_payload.ref, 'main') }}
-    # Allow one concurrent deployment
-    concurrency:
-      group: "pages"
-      cancel-in-progress: true
-
-    needs: build
-    permissions:
-      actions: read
-      pages: write
-      id-token: write
+#  deploy:
+#    # Run if it was not triggered from remote OR the remote source was master or main.
+#    if: ${{ github.event_name != 'repository_dispatch' || contains(github.event.client_payload.ref, 'master') || contains(github.event.client_payload.ref, 'main') }}
+#    # Allow one concurrent deployment
+#    concurrency:
+#      group: "pages"
+#      cancel-in-progress: true
+#
+#    needs: build
+#    permissions:
+#      actions: read
+#      pages: write
+#      id-token: write
 
     # Deploy to the github-pages environment
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+#    environment:
+#      name: github-pages
+#      url: ${{ steps.deployment.outputs.page_url }}
 
-    runs-on: ubuntu-latest
+ #   runs-on: ubuntu-latest
 
-    steps:
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v4
+  #  steps:
+  #    - name: Deploy
+  #      id: deployment
+  #      uses: actions/deploy-pages@v4
 
