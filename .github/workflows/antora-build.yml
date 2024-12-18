@@ -5,7 +5,7 @@ name: Publish locally on pull request
 on:
   pull_request:
     types: [opened, edited, reopened]
-  # Allows you to run this workflow manually from the Actions tab
+  # Allows you to run this workflow manually from the Actions tab edit
   workflow_dispatch:
 concurrency:
   group: github-pages
