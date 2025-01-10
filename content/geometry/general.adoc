@@ -9,7 +9,7 @@ endif::[]
 
 == Dimensions
 
-Unless stated otherwise, all numeric values within {THIS_STANDARD} are in SI units. <<tab-quantities-units>> lists the units and dimensions:
+Unless stated otherwise, all numeric valu es within {THIS_STANDARD} are in SI units. <<tab-quantities-units>> lists the units and dimensions:
 
 [#tab-quantities-units]
 .Quantities and units
