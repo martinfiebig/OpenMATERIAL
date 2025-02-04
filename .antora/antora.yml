@@ -11,7 +11,7 @@ version:
   v(*): V$2
   V(*): V$2
   # Update version number accordingly. This is the version for any other activated branch (branch must be added in the generator site.yml!). Schema = 0.0.x-<branch-name> (only works for branches starting with "feature/")
-  (*): 'V2-0-0-$1'
+  (*): 'V2-0-0-$2'
 # CENTRAL DOCUMENT ONLY!!! First page of the component. Define only once per component!
 start_page: specification:index.adoc
 
