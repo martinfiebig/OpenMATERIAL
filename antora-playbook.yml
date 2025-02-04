@@ -17,11 +17,17 @@ content:
     start_path: .antora
     tags: [v*,V*]
   - url: .
+    branches: [main]
+    start_path: .antora
+    tags: [v*,V*]
+  - url: .
     branches: [test-v.2.0]
     start_path: .antora
+    tags: [v*,V*]
   - url: .
     branches: [test-v3.0]
     start_path: .antora
+    tags: [v*,V*]
 # end::content[]
 
 ui:
