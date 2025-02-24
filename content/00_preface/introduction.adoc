@@ -70,6 +70,10 @@ Multiple formats can exist in parallel, so one asset file can have multiple _3D 
 However, to be compliant with {THIS_STANDARD}, a simulation environment must support at least one of the named 3D data formats.
 3D data files may contain conventional materials, supporting visual rendering.
 These materials are unaffected by {THIS_STANDARD} and may still be used in parallel.
+In the overview image above, the 3D Data File has the exemplary materials "asphalt", "concrete" and "texture".
+The "texture" material has the visual texture of a stop sign.
+All these materials are purely visual materials embedded in the 3D data file.
+They may be used by conventional rendering systems.
 However, the material names given in the 3D data files are used to map _material properties_ in the _material_ mapping file, as described in the next section.
 More information about the file formats is given in xref:07_geometry/file-format-support.adoc[].
 An https://github.com/asam-ev/OpenMATERIAL-3D/tree/main/examples/example_asset.gltf[example model] is provided in the examples folder of the repository.
@@ -83,7 +87,14 @@ The table also includes a human-readable description of the material.
 This setup therefore allows for two mapping possibilities:
 
 * Mapping one _material property_ file per _material_ name in the _3D model_.
+  In the overview image above, the material "asphalt" may for example be mapped to a _material property_ file "aphalt.xomp".
 * Mapping a color code from a dedicated {THIS_STANDARD} assignment texture to a _material property_ file, enabling detailed differentiation between _material properties_.
+  In the overview image above, the material "texture" belonging to the "Road sign" has a visual texture of a stop sign.
+  The asset file of the 3D asset allows to define dedicated assignment textures for each material.
+  They use the same uv-map as the visual texture.
+  The RGB values of the texels in the assignment texture can be mapped to _material property_ files.
+  In the overview image, the RGB value (0, 0, 255) is mapped to the _material property_ file "steel_red.xomp" and (0, 255, 0) is mapped to "steel_white.xomp".
+  The RGB values are assignment codes, so they are completely separate from the visual representation.
 
 An https://github.com/asam-ev/OpenMATERIAL-3D/tree/main/examples/example_mapping.xomm[example mapping file] is provided in the examples folder of the repository.
 
