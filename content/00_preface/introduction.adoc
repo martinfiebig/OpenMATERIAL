@@ -104,7 +104,7 @@ Examples for _material property_ files and look-up table files are provided in t
 == Interaction with other ASAM standards
 
 ASAM OpenX standards strive to provide comprehensive, realistic, and exchangeable simulation data for the development and testing of autonomous systems.
-{THIS_STANDARD} asset files and 3D objects defined in the 07_geometry/introduction.adoc[Geometry] chapter act as a connecting link between {THIS_STANDARD} and the ASAM OpenX ecosystem.
+{THIS_STANDARD} asset files and 3D objects defined in the xref:07_geometry/introduction.adoc[Geometry] chapter act as a connecting link between {THIS_STANDARD} and the ASAM OpenX ecosystem.
 Specifically, asset files are referenced from other ASAM OpenX standards to integrate and use 3D objects, their metadata and materials:
 
 * ASAM OpenDRIVE standardizes the description of road networks, including geometric definitions of the road, but primarily focuses on the semantic description of the road. 
