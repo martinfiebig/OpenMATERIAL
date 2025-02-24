@@ -188,23 +188,23 @@ UID:: asam.net:xom-mat:1.0.0:xompt.humidity_valid_range
 
 Description:: The humidity in percent (%) shall be within the range of 0 to 100.
 
-==== real_part_relative_permeability_valid_range
+==== real_part_permeability_valid_range
 
-UID:: asam.net:xom-mat:1.0.0:xompt.real_part_relative_permeability_valid_range
+UID:: asam.net:xom-mat:1.0.0:xompt.real_part_permeability_valid_range
 
-Description:: The real part of relative permeability shall be within the range of 1.256637e-06 to 1.256637 (µ~0~ to µ~0~ x 10e06).
+Description:: The real part of permeability shall be within the range of 1.256637e-06 to 1.256637 (µ~0~ to µ~0~ x 10e06).
 
-==== imaginary_part_relative_permeability_valid_range
+==== imaginary_part_permeability_valid_range
 
-UID:: asam.net:xom-mat:1.0.0:xompt.real_part_relative_permeability_valid_range
+UID:: asam.net:xom-mat:1.0.0:xompt.real_part_permeability_valid_range
 
-Description:: The imaginary part of relative permeability shall not be below 0.
+Description:: The imaginary part of permeability shall not be below 0.
 
-==== imaginary_part_relative_permittivity_valid_range
+==== imaginary_part_permittivity_valid_range
 
-UID:: asam.net:xom-mat:1.0.0:xompt.imaginary_part_relative_permitivity_valid_range
+UID:: asam.net:xom-mat:1.0.0:xompt.imaginary_part_permitivity_valid_range
 
-Description:: The imaginary part of relative permittivity shall not be below 0.
+Description:: The imaginary part of permittivity shall not be below 0.
 
 ==== incident_elevation_angle_valid_range
 
