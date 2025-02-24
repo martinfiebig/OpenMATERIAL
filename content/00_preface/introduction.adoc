@@ -87,11 +87,11 @@ The table also includes a human-readable description of the material.
 This setup therefore allows for two mapping possibilities:
 
 * Mapping one _material property_ file per _material_ name in the _3D model_.
-  In the overview image above, the material "asphalt" may for example be mapped to a _material property_ file "aphalt.xomp".
-* Mapping a color code from a dedicated {THIS_STANDARD} assignment texture to a _material property_ file, enabling detailed differentiation between _material properties_.
+  In the overview image above, the material "asphalt" is mapped to a _material property_ file "asphalt.xomp".
+* Mapping an RGB color code from a dedicated {THIS_STANDARD} assignment texture to a _material property_ file, enabling detailed differentiation between _material properties_.
   In the overview image above, the material "texture" belonging to the "Road sign" has a visual texture of a stop sign.
   The asset file of the 3D asset allows to define dedicated assignment textures for each material.
-  They use the same uv-map as the visual texture.
+  They use the same uv-map as the visual textures.
   The RGB values of the texels in the assignment texture can be mapped to _material property_ files.
   In the overview image, the RGB value (0, 0, 255) is mapped to the _material property_ file "steel_red.xomp" and (0, 255, 0) is mapped to "steel_white.xomp".
   The RGB values are assignment codes, so they are completely separate from the visual representation.
