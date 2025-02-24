@@ -32,9 +32,9 @@ Standardization efforts have been made for scenarios and road data using ASAM Op
 
 {THIS_STANDARD} is divided into distinct yet complementary chapters enabling a modular approach to implementation. Key to this is the distinction between material and geometry. Based on specific use cases, users of {THIS_STANDARD} can implement the standard for one or both chapters.  At least one of the two chapters shall be implemented to conform with the standard.
 
-* xref:08_material/material-index.adoc[*Material*]: This chapter includes definitions and file formats for storing and exchanging material properties. These properties can be physical, such as surface roughness, permittivity, and index of refraction, or measured data, like wavelength and angle-dependent reflectance values. Tools or systems focusing on material properties can implement support for the material chapter. For example: “This tool supports {THIS_STANDARD}: Material”.
+* xref:08_material/introduction.adoc[*Material*]: This chapter includes definitions and file formats for storing and exchanging material properties. These properties can be physical, such as surface roughness, permittivity, and index of refraction, or measured data, like wavelength and angle-dependent reflectance values. Tools or systems focusing on material properties can implement support for the material chapter. For example: “This tool supports {THIS_STANDARD}: Material”.
 
-* xref:07_geometry/geometry-index.adoc[*Geometry*]: This chapter contains structures for different object classes. These structures define uniform node structure, naming scheme and coordinate systems to enable exchange, common integration and animation of 3D models. Tools or systems working primarily with geometric data, such as 3D models or spatial structures, can implement support for the geometry chapter. For example: “This tool supports {THIS_STANDARD}: Geometry”.
+* xref:07_geometry/introduction.adoc[*Geometry*]: This chapter contains structures for different object classes. These structures define uniform node structure, naming scheme and coordinate systems to enable exchange, common integration and animation of 3D models. Tools or systems working primarily with geometric data, such as 3D models or spatial structures, can implement support for the geometry chapter. For example: “This tool supports {THIS_STANDARD}: Geometry”.
 
 For a full exchange of simulation-ready _3D assets_ however, both chapters must be supported. Systems or tools providing full support for both material and geometric data can be described as follows: “This tool supports {THIS_STANDARD}”.
 
@@ -104,7 +104,7 @@ Examples for _material property_ files and look-up table files are provided in t
 == Interaction with other ASAM standards
 
 The ASAM OpenX standards strive to provide comprehensive, realistic, and exchangeable simulation data for the development and testing of autonomous systems.
-3D objects defined in the 07_geometry/geometry-index.adoc[Geometry] chapter act as a connecting link between {THIS_STANDARD} and other ASAM standards:
+3D objects defined in the 07_geometry/introduction.adoc[Geometry] chapter act as a connecting link between {THIS_STANDARD} and the following ASAM standards:
 
 * ASAM OpenDRIVE standardizes the description of road networks, including geometric definitions of the road, but primarily focuses on the semantic description of the road. 
   The {THIS_STANDARD} geometry object class "Environment" enhances this by allowing the definition of a comprehensive _3D environment_ that aligns with an ASAM OpenDRIVE map.
