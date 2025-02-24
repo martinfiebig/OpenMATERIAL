@@ -32,9 +32,9 @@ Standardization efforts have been made for scenarios and road data using ASAM Op
 
 {THIS_STANDARD} is divided into distinct yet complementary chapters enabling a modular approach to implementation. Key to this is the distinction between material and geometry. Based on specific use cases, users of {THIS_STANDARD} can implement the standard for one or both chapters.  At least one of the two chapters shall be implemented to conform with the standard.
 
-* *Material*: This chapter includes definitions and file formats for storing and exchanging material properties. These properties can be physical, such as surface roughness, permittivity, and index of refraction, or measured data, like wavelength and angle-dependent reflectance values. Tools or systems focusing on material properties can implement support for the material chapter. For example: “This tool supports {THIS_STANDARD}: Material”.
+* xref:08_material/introduction.adoc[*Material*]: This chapter includes definitions and file formats for storing and exchanging material properties. These properties can be physical, such as surface roughness, permittivity, and index of refraction, or measured data, like wavelength and angle-dependent reflectance values. Tools or systems focusing on material properties can implement support for the material chapter. For example: “This tool supports {THIS_STANDARD}: Material”.
 
-* *Geometry*: This chapter contains structures for different object classes. These structures define uniform node structure, naming scheme and coordinate systems to enable exchange, common integration and animation of 3D models. Tools or systems working primarily with geometric data, such as 3D models or spatial structures, can implement support for the geometry chapter. For example: “This tool supports {THIS_STANDARD}: Geometry”.
+* xref:07_geometry/introduction.adoc[*Geometry*]: This chapter contains structures for different object classes. These structures define uniform node structure, naming scheme and coordinate systems to enable exchange, common integration and animation of 3D models. Tools or systems working primarily with geometric data, such as 3D models or spatial structures, can implement support for the geometry chapter. For example: “This tool supports {THIS_STANDARD}: Geometry”.
 
 For a full exchange of simulation-ready _3D assets_ however, both chapters must be supported. Systems or tools providing full support for both material and geometric data can be described as follows: “This tool supports {THIS_STANDARD}”.
 
@@ -100,6 +100,37 @@ The defined look-up tables include:
 * xref:08_material/material-reflectance-schema.adoc[Reflectance table]
 
 Examples for _material property_ files and look-up table files are provided in the https://github.com/asam-ev/OpenMATERIAL-3D/tree/main/examples/[examples folder] of the repository.
+
+== Interaction with other ASAM standards
+
+ASAM OpenX standards strive to provide comprehensive, realistic, and exchangeable simulation data for the development and testing of autonomous systems.
+{THIS_STANDARD} asset files and 3D objects defined in the xref:07_geometry/introduction.adoc[Geometry] chapter act as a connecting link between {THIS_STANDARD} and the ASAM OpenX ecosystem.
+Specifically, asset files are referenced from other ASAM OpenX standards to integrate and use 3D objects, their metadata and materials:
+
+* ASAM OpenDRIVE standardizes the description of road networks, including geometric definitions of the road, but primarily focuses on the semantic description of the road. 
+  The {THIS_STANDARD} geometry object class "Environment" enhances this by allowing the definition of a comprehensive _3D environment_ that aligns with an ASAM OpenDRIVE map.
+* ASAM OpenSCENARIO XML is a file format created to describe dynamic content in driving and traffic simulators, with a primary focus on complex maneuvers involving multiple entities like vehicles and pedestrians.
+  The {THIS_STANDARD} geometry chapter defines node structures and metadata for these object classes to seamlessly integrate ASAM OpenSCENARIO XML definitions with a _3D model_.
+  The asset file (.xoma) of a static _3D environment_ shall be linked in ASAM OpenSCENARIO XML using the https://publications.pages.asam.net/standards/ASAM_OpenSCENARIO/ASAM_OpenSCENARIO_XML/latest/generated/content/RoadNetwork.html[SceneGraphFile property].
+  Asset files (.xoma) of individual objects, such as vehicles, shall be linked using the https://publications.pages.asam.net/standards/ASAM_OpenSCENARIO/ASAM_OpenSCENARIO_XML/latest/07_components_scenario/07_02_storyboard_entities.html[model3d property].
+  Both environment and objects may either be given as an absolute path or as a path relative to the ASAM OpenSCENARIO XML file (.xosc).
+  A relative path is indicated by a dot (.) as the first character.
+  The paths to 3D assets specified in the _scenario_ definition shall serve as single source of truth and be used consistently in simulation environments.
+  In the case of distributed simulation environments, the paths shall be synchronized between all relevant simulation components.
+  Synchronization may be implemented using ASAM Open Simulation Interface (OSI).
+* ASAM Open Simulation Interface is a specification for interfaces between models and components in a distributed simulation.
+  ASAM OSI primarily focuses on the environmental perception of automated driving functions, but it also covers interfaces for models of traffic participants.
+  So called *model_references* in OSI enable enrichment of the object-list based environment representations by referencing 3D objects defined by {THIS_STANDARD}:
+  The asset file (.xoma) of a _3D environment_ shall be linked in ASAM OSI using the https://opensimulationinterface.github.io/osi-antora-generator/asamosi/current/gen/structosi3_1_1GroundTruth.html#a83042861723a4a9e890a53aa98d88858[GroundTruth::model_reference].
+  Asset files (.xoma) of individual objects, like vehicles, shall be linked with the https://opensimulationinterface.github.io/osi-antora-generator/asamosi/current/gen/structosi3_1_1MovingObject.html#a07558573bee7a5fa2f0729e1cad1325f[MovingObject::model_reference] or the https://opensimulationinterface.github.io/osi-antora-generator/asamosi/current/gen/structosi3_1_1StationaryObject.html#aad1c24fcdb11699954bf3494b8632288[StationaryObject::model_reference].
+  References to environments and individual objects may either be given as an absolute path or a relative path.
+  A relative path is indicated by a dot (.) as the first character.
+  As ASAM OSI transfers the data between tools and simulation models, the root path that a relative model reference path is relative to, has to be given or known to all tools and models in the tool chain.
+  This can be done with tool settings, configs, or model parameters, for example, an functional mock-up interface (FMI) parameter.
+
+The transformation of reference frames between these ASAM standards is described in xref:07_geometry/general.adoc#_local_coordinate_system[Geometry - Local coordinate system].
+
+Examples for all interactions are provided in the https://github.com/asam-ev/OpenMATERIAL-3D/tree/main/examples/scenario_example[scenario_example folder].
 
 == Conventions and notations
 
