@@ -105,17 +105,17 @@ Some material properties depend on other simulation quantities, such as waveleng
 To avoid overloading one material file with large look-up tables, these are placed in auxiliary look-up table files linked with URIs in the main _material property_ file. 
 The defined look-up tables include:
 
-* xref:08_material/material-emp-schema.adoc[]
-* xref:08_material/material-optical-schema.adoc[]
-* xref:08_material/material-brdf-schema.adoc[]
-* xref:08_material/material-reflectance-schema.adoc[]
+* Electromagnetic properties, see xref:08_material/material-emp-schema.adoc[]
+* Optical properties, see xref:08_material/material-optical-schema.adoc[]
+* Bidirectional reflectance distribution functions (BRDFs), xref:08_material/material-brdf-schema.adoc[]
+* Reflectance table, xref:08_material/material-reflectance-schema.adoc[]
 
 Examples for _material property_ files and look-up table files are provided in the https://github.com/asam-ev/OpenMATERIAL-3D/tree/main/examples/[examples folder] of the repository.
 
 == Interaction with other ASAM standards
 
 ASAM OpenX standards strive to provide comprehensive, realistic, and exchangeable simulation data for the development and testing of autonomous systems.
-{THIS_STANDARD} asset files and 3D objects defined in xref:07_geometry/introduction.adoc[] act as a connecting link between {THIS_STANDARD} and the ASAM OpenX ecosystem.
+{THIS_STANDARD} asset files and 3D objects, as defined in xref:07_geometry/introduction.adoc[], act as a connecting link between {THIS_STANDARD} and the ASAM OpenX ecosystem.
 Specifically, asset files are referenced from other ASAM OpenX standards to integrate and use 3D objects, their metadata and materials:
 
 * ASAM OpenDRIVE standardizes the description of road networks, including geometric definitions of the road, but primarily focuses on the semantic description of the road. 
@@ -139,7 +139,7 @@ Specifically, asset files are referenced from other ASAM OpenX standards to inte
   As ASAM OSI transfers the data between tools and simulation models, the root path that a relative model reference path is relative to, has to be given or known to all tools and models in the tool chain.
   This can be done with tool settings, configs, or model parameters, for example, an functional mock-up interface (FMI) parameter.
 
-The transformation of reference frames between these ASAM standards is described in xref:07_geometry/general.adoc#_local_coordinate_system[].
+The transformation of reference frames between these ASAM standards is described in xref:07_geometry/general.adoc#_local_coordinate_system[Geometry - Local coordinate system].
 
 Examples for all interactions are provided in the https://github.com/asam-ev/OpenMATERIAL-3D/tree/main/examples/scenario_example[scenario_example folder].
 

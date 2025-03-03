@@ -89,7 +89,7 @@ To distribute material data and _3D assets_ efficiently, it shall be possible to
 |===
 |*Description*                      |As a simulation platform developer, I want to be able to add or change _material properties_ independently of _3D assets_ geometries in a _simulation platform_.
 |*Relevant OpenMATERIAL 3D chapters*|Material
-|*Influencing standards*            |ASAM OpenLABEL cite: [ola]
+|*Influencing standards*            |ASAM OpenLABEL cite:[ola]
 |*Influencing technologies*         |Unreal Engine, Unity, OptiX, CUDA
 |*Relevant user*                    |Simulation platform developer
 |===
@@ -120,7 +120,7 @@ The simulation shall be able to cope with different real-time requirements, for 
 |===
 |*Description*                      |As a perception algorithm developer, I want to use simulated environments for model training and testing, as real-world information collection is too expensive and inconvenient.
 |*Relevant OpenMATERIAL 3D chapters*|Geometry and Material
-|*Influencing standards*            |ASAM OSI cite:[osi], ASAM OpenSCENARIO ASAM OpenSCENARIO cite:[osc], ASAM OpenDRIVE ASAM OpenDRIVE cite:[odr]
+|*Influencing standards*            |ASAM OSI cite:[osi], ASAM OpenSCENARIO cite:[osc], ASAM OpenDRIVE cite:[odr]
 |*Influencing technologies*         |Unity, OptiX, Regeneration AI
 |*Relevant user*                    |End user
 |===
