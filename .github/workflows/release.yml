@@ -49,6 +49,7 @@ jobs:
         python3 generate_schema_docs.py
 
     - name: push changes to remote
+      working-directory: repo/scripts
       run: |
         git config --global user.name "Martin Fiebig"
         git config --global user.email "martin.fiebig@parson-europe.com"
