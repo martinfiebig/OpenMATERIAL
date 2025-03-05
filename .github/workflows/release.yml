@@ -55,7 +55,7 @@ jobs:
         python3 generate_schema_docs.py
         git config --global user.name "Martin Fiebig"
         git config --global user.email "martin.fiebig@parson-europe.com"
-        git add --all; git add ../content/08_material/material-reflectance-schema.adoc -f
+        git add ../content/*schema.adoc -f
         git commit -m "test commit"
         git push
 
