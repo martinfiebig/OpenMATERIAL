@@ -18,6 +18,16 @@ content:
     tags: [v*,V*]
   - url: .
     start_path: .antora
+    tags: [v1.0.0]
+  - url: .
+    start_path: .antora
+    tags: [v2.0.0]
+  - url: .
+    start_path: .antora
+    tags: [v3.0.0]
+  - url: .
+    start_path: .antora
+    branches: [deploy]
 # end::content[]
 
 ui:
