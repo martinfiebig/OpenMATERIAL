@@ -25,9 +25,6 @@ content:
   - url: .
     start_path: .antora
     tags: [v3.0.0]
-  - url: .
-    start_path: .antora
-    branches: [deploy]
 # end::content[]
 
 ui:
