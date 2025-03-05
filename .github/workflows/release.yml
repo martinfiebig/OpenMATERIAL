@@ -1,10 +1,11 @@
 # Minimal working Antora configuration to publish to GitHub Pages
 # Source: https://docs.antora.org/antora/latest/publish-to-github-pages/  (example 2)
 # Output URL: https://asam-ev.github.io/OpenMATERIAL
-name: Publish with Antora to GitHub Pages
+name: Upload AsciiDoc-files generated from JSON-files
 on:
   pull_request:
-    types: [opened]
+    branches: [main]
+    types: [closed]
   workflow_dispatch:
   # Allows you to run this workflow manually from the Actions tab
 #  workflow_dispatch:
@@ -43,12 +44,7 @@ jobs:
          fetch-depth: 0 # test if depth in fetch history is required
          submodules: recursive
 
-    - name: Generate AsciiDoc from JSON
-      working-directory: repo/scripts
-      run: |
-        python3 generate_schema_docs.py
-
-    - name: push changes to remote
+    - name: build files and push changes to remote
       working-directory: repo/scripts
       run: |
         git checkout deploy
@@ -62,42 +58,4 @@ jobs:
     - name: Configure Pages
       uses: actions/configure-pages@v4
 
-    - name: Generate site
-      uses: docker://ghcr.io/asam-ev/project-guide-docker:4
-      with:
-        entrypoint: sh
-        args: repo/run-build.sh # modfied based on OSI
-
-   
-
-    - name: Upload Artifacts
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: ./repo/site
-
-  deploy:
-    # Run if it was not triggered from remote OR the remote source was master or main.
-    if: ${{ github.event_name != 'repository_dispatch' || contains(github.event.client_payload.ref, 'master') || contains(github.event.client_payload.ref, 'main') }}
-    # Allow one concurrent deployment
-    concurrency:
-      group: "pages"
-      cancel-in-progress: true
-
-    needs: build
-    permissions:
-      actions: read
-      pages: write
-      id-token: write
-
-    # Deploy to the github-pages environment
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v4
 
