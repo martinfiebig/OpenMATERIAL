@@ -53,7 +53,8 @@ jobs:
       run: |
         git config --global user.name "Martin Fiebig"
         git config --global user.email "martin.fiebig@parson-europe.com"
-        git add --all; git commit -m "test commit"
+        git add --all; git add ../content/08_material/material-reflectance-schema.adoc
+        git commit -m "test commit"
         git push
 
     - name: Configure Pages
