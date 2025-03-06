@@ -129,7 +129,7 @@
                             "type": "number",
                             "description": "Young's modulus of the material in Pascal (Pa). The value shall be in the range of 0 to 1.5e12 Pa (Young’s modulus of a diamond)",
                             "minimum": 0,
-                            "maximum": 1.5e12
+                            "maximum": 1500000000000
                         },
                         "poissonsRatio": {
                             "type": "number",
