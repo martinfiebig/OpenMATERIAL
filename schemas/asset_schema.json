@@ -65,7 +65,7 @@
                     "description": "The version number of the asset, following semantic versioning (for example, '1.0.0').",
                     "pattern": "^\\d+\\.\\d+\\.\\d+$"
                 },
-                "openMaterialVersion": {
+                "openMaterial3dVersion": {
                     "type": "string",
                     "description": "The version of the ASAM OpenMATERIAL 3D specification used, adhering to semantic versioning (for example, '1.0.0').",
                     "pattern": "^\\d+\\.\\d+\\.\\d+$"
@@ -301,7 +301,7 @@
                 "name",
                 "uuid",
                 "assetVersion",
-                "openMaterialVersion",
+                "openMaterial3dVersion",
                 "copyrights",
                 "license",
                 "authors",
