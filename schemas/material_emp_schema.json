@@ -103,14 +103,14 @@
                             "number",
                             "null"
                         ],
-                        "description": "Real part of complex relative permeability of material, which is stem:[\\mu_r^'] in stem:[\\mu_r = \\mu_r^' - j \\mu_r^{''}]."
+                        "description": "Real part of complex relative permeability of material, which is \\(\\mu_r^'\\) in \\(\\mu_r = \\mu_r^' - j \\mu_r^{''}\\)."
                     },
                     {
                         "type": [
                             "number",
                             "null"
                         ],
-                        "description": "Imaginary part of complex relative permeability of material. Test: \\(\\boldsymbol{R}_{object}^{src}\\)"
+                        "description": "Imaginary part of complex relative permeability of material, which is \\(\\mu_r^{''}\\) in \\(\\mu_r = \\mu_r^' - j \\mu_r^{''}\\)"
                     },
                     {
                         "type": [
