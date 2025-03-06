@@ -5,7 +5,7 @@
     "properties": {
         "metadata": {
             "type": "object",
-            "description": "The key meta information about the EMP look-up table.",
+            "description": "VERSION_V2!!_ The key meta information about the EMP look-up table.",
             "properties": {
                 "name": {
                     "type": "string",
