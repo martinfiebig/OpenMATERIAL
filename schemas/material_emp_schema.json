@@ -103,7 +103,7 @@
                             "number",
                             "null"
                         ],
-                        "description": "Real part of complex relative permeability of material."
+                        "description": "Real part of complex relative permeability of material, which is stem:[\\mu_r^'] in stem:[\\mu_r = \\mu_r^' - j \\mu_r^{''}]."
                     },
                     {
                         "type": [
