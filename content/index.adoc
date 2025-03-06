@@ -20,7 +20,6 @@ In alteration to the regular https://www.asam.net/license[license terms], ASAM a
 
 ASAM OpenMATERIAL is a registered trademark of ASAM e.V.
 
-This document has the status of a Public Release Candidate (PRC). It may be changed during the public review based on the incorporation of reviewed comments and minor updates.
 //
 // DO NOT CHANGE!!!
 
