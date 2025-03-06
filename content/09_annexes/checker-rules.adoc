@@ -102,54 +102,6 @@ UID:: asam.net:xom-mat:1.0.0:xomp.look_up_tables_unique_wavelengths
 
 Description:: Look-up tables referenced in a .xomp file should not have overlapping wavelength ranges. (Warning level)
 
-==== surface_height_rms_valid_range
-
-UID:: asam.net:xom-mat:1.0.0:xomp.surface_height_rms_valid_range
-
-Description:: The surface height root mean square in meters (m) shall not be below 0.
-
-==== surface_correlation_length_valid_range
-
-UID:: asam.net:xom-mat:1.0.0:xomp.surface_correlation_length_valid_range
-
-Description:: The surface correlation length in meters (m) shall not be below 0.
-
-==== emissivity_coefficient_valid_range
-
-UID:: asam.net:xom-mat:1.0.0:xomp.emissivity_coefficient_valid_range
-
-Description:: The emissivity coefficient shall be within the range of 0 to 1.
-
-==== temperature_valid_range
-
-UID:: asam.net:xom-mat:1.0.0:xomp.temperature_valid_range
-
-Description:: A temperature in Kelvin (K) shall not be below 0.
-
-==== youngs_modulus_valid_range
-
-UID:: asam.net:xom-mat:1.0.0:xomp.youngs_modulus_valid_range
-
-Description:: The Young's modulus in Pascal (Pa) shall be within the range of 0 to 1.5e12 (Young's modulus of a diamond).
-
-==== poissons_ratio_valid_range
-
-UID:: asam.net:xom-mat:1.0.0:xomp.poissons_ratio_valid_range
-
-Description:: The Poisson's ratio shall be within the range of -1 to 0.5 (from extreme auxetic to perfectly incompressible).
-
-==== density_valid_range
-
-UID:: asam.net:xom-mat:1.0.0:xomp.density_valid_range
-
-Description:: The density in kilogram per cubic metre (kg m^-3^) shall be within the range of 0 to 25 (density of Osmium).
-
-==== retroreflection_coefficient_valid_range
-
-UID:: asam.net:xom-mat:1.0.0:xomp.retroreflection_coefficient_valid_range
-
-Description:: The coefficient of retro-reflection in candelas per lux per square metre (cd lx^-1^ m^-2^) shall be within the range of 0 to 5000.
-
 === A.2.2 XOMPT
 
 ==== tables_sorted_correctly
