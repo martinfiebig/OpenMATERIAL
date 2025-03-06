@@ -124,8 +124,7 @@
                             "number",
                             "null"
                         ],
-                        "description": "Real part of complex relative permittivity of material, which is \\(\\epsilon_{\\textrm{r}}^{'}\\) in \\(\\epsilon_{\\textrm{r}} = \\epsilon_{\\textrm{r}}^{'} - j \\epsilon_{\\textrm{r}}^{''}\\).",
-                        "minimum": 1
+                        "description": "Real part of complex relative permittivity of material, which is \\(\\epsilon_{\\textrm{r}}^{'}\\) in \\(\\epsilon_{\\textrm{r}} = \\epsilon_{\\textrm{r}}^{'} - j \\epsilon_{\\textrm{r}}^{''}\\)."
                     },
                     {
                         "type": [
