@@ -108,28 +108,28 @@
                             "number",
                             "null"
                         ],
-                        "description": "Real part of complex permeability of material."
+                        "description": "Real part of complex relative permeability of material, which is \\(\\mu_{\\textrm{r}}^{'}\\) in \\(\\mu_r = \\mu_{\\textrm{r}}^{'} - j \\mu_{\\textrm{r}}^{''}\\)."
                     },
                     {
                         "type": [
                             "number",
                             "null"
                         ],
-                        "description": "Imaginary part of complex permeability of material."
+                        "description": "Imaginary part of complex relative permeability of material, which is \\(\\mu_{\\textrm{r}}^{''}\\) in \\(\\mu_{\\textrm{r}} = \\mu_{\\textrm{r}}^{'} - j \\mu_{\\textrm{r}}^{''}\\)."
                     },
                     {
                         "type": [
                             "number",
                             "null"
                         ],
-                        "description": "Real part of complex permittivity of material."
+                        "description": "Real part of complex relative permittivity of material, which is \\(\\epsilon_{\\textrm{r}}^{'}\\) in \\(\\epsilon_{\\textrm{r}} = \\epsilon_{\\textrm{r}}^{'} - j \\epsilon_{\\textrm{r}}^{''}\\)."
                     },
                     {
                         "type": [
                             "number",
                             "null"
                         ],
-                        "description": "Imaginary part of complex permittivity of material."
+                        "description": "Imaginary part of complex relative permittivity of material, which is \\(\\epsilon_{\\textrm{r}}^{''}\\) in \\(\\epsilon_{\\textrm{r}} = \\epsilon_{\\textrm{r}}^{'} - j \\epsilon_{\\textrm{r}}^{''}\\)."
                     }
                 ],
                 "minItems": 7,
