@@ -110,7 +110,7 @@
                             "number",
                             "null"
                         ],
-                        "description": "Imaginary part of complex relative permeability of material."
+                        "description": "Imaginary part of complex relative permeability of material. Test: \\(\\boldsymbol{R}_{object}^{src}\\)"
                     },
                     {
                         "type": [
