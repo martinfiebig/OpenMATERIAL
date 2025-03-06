@@ -19,7 +19,7 @@ Unless stated otherwise, all numeric values within {THIS_STANDARD} are in SI uni
 
 |acceleration |meters per second squared|m/s^2^
 |plane angle |radians |rad
-|distance, dimension |meter |m
+|distance, dimension, length |meter |m
 |mass |kilogram |kg
 |time |second |s
 |speed |meters per second|m/s
