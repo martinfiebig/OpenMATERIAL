@@ -109,39 +109,3 @@ Description:: Look-up tables referenced in a .xomp file should not have overlapp
 UID:: asam.net:xom-mat:1.0.0:xompt.tables_sorted_correctly
 
 Description:: Arrays in look-up tables shall be sorted based on the columns starting with the first.
-
-==== real_part_ior_valid_range
-
-UID:: asam.net:xom-mat:1.0.0:xompt.real_part_ior_valid_range
-
-Description:: The real part of the index of refraction (refractive index n) shall not be below 0.
-
-==== imaginary_part_ior_valid_range
-
-UID:: asam.net:xom-mat:1.0.0:xompt.imaginary_part_ior_valid_range
-
-Description:: The imaginary part of the index (extinction coefficient k) of refraction shall not be below 0 (= perfect transparent material).
-
-==== real_part_permeability_valid_range
-
-UID:: asam.net:xom-mat:1.0.0:xompt.real_part_permeability_valid_range
-
-Description:: The real part of the relative permeability shall not be below 1.
-
-==== imaginary_part_permeability_valid_range
-
-UID:: asam.net:xom-mat:1.0.0:xompt.imaginary_part_permeability_valid_range
-
-Description:: The imaginary part of the relative permeability shall not be below 0.
-
-==== real_part_permittivity_valid_range
-
-UID:: asam.net:xom-mat:1.0.0:xompt.real_part_permittivity_valid_range
-
-Description:: The real part of the relative permittivity shall not be below 1.
-
-==== imaginary_part_permittivity_valid_range
-
-UID:: asam.net:xom-mat:1.0.0:xompt.imaginary_part_permitivity_valid_range
-
-Description:: The imaginary part of permittivity shall not be below 0.

@@ -99,14 +99,16 @@
                             "number",
                             "null"
                         ],
-                        "description": "Real part of index of refraction of material, which is \\(n^{'}\\) in \\(n = n^{'} - j \\kappa\\)."
+                        "description": "Real part of index of refraction of material, which is \\(n^{'}\\) in \\(n = n^{'} - j \\kappa\\).",
+                        "minimum": 0
                     },
                     {
                         "type": [
                             "number",
                             "null"
                         ],
-                        "description": "Imaginary part of index of refraction of material, which is \\(\\kappa\\) in \\(n = n^{'} - j \\kappa\\)."
+                        "description": "Imaginary part of index of refraction of material, which is \\(\\kappa\\) in \\(n = n^{'} - j \\kappa\\).",
+                        "minimum": 0
                     }
                 ],
                 "minItems": 4,
