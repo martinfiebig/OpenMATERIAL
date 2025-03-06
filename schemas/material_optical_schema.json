@@ -96,7 +96,7 @@
                             "number",
                             "null"
                         ],
-                        "description": "Real part of index of refraction of material."
+                        "description": "Real part of index of refraction of material, which is \\(n^{'}\\) in \\(n = n^{'} - j n^{''}\\)."
                     },
                     {
                         "type": [
