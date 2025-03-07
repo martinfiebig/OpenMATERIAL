@@ -1,18 +1,16 @@
-# Minimal working Antora configuration to publish to GitHub Pages
-# Source: https://docs.antora.org/antora/latest/publish-to-github-pages/  (example 2)
-# Output URL: https://asam-ev.github.io/OpenMATERIAL
+# Workflow to push the generated files from JSON to AsciiDoc to the repository.
+# Only execute on the deployment-branch, where the different versions of the documentation are tagged.
 name: Upload AsciiDoc-files generated from JSON-files
 on:
   pull_request:
-    branches: [main]
-    types: [closed]
+    types:
+      - closed
+    branches: [deploy]
   workflow_dispatch:
   # Allows you to run this workflow manually from the Actions tab
-#  workflow_dispatch:
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 jobs:
   build:
-    name: Build OpenMATERIAL documentation-release and deploy it to gh-pages
+    name: Upload AsciiDoc-files generated from JSON-files
     runs-on: ubuntu-latest
     steps:
     - name: Checkout with submodules
@@ -32,8 +30,4 @@ jobs:
         git add ../content/*schema.adoc -f
         git commit -m "Automatically commit generated AsciiDoc files"
         git push
-
-    - name: Configure Pages
-      uses: actions/configure-pages@v4
-
 
