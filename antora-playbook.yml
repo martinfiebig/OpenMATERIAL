@@ -18,7 +18,8 @@ content:
     tags: [v*,V*]
   - url: .
     start_path: .antora
-    tags: [v1.0.0, v2.0.0, v3.0.0]
+    #tags: [v1.0.0, v2.0.0, v3.0.0]
+    tags: [v*]
     branches: [main]
 # end::content[]
 
