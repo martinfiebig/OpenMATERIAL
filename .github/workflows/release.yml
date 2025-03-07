@@ -8,6 +8,11 @@ on:
     branches: [deploy]
   workflow_dispatch:
   # Allows you to run this workflow manually from the Actions tab
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  
 jobs:
   build:
     name: Upload AsciiDoc-files generated from JSON-files
@@ -25,7 +30,7 @@ jobs:
       run: |
         git checkout deploy
         python3 generate_schema_docs.py
-        git config --global user.name "ASAM"
+        git config --global user.name "Commit from Workflow"
         git config --global user.email "test@test.com"
         git add ../content/*schema.adoc -f
         git commit -m "Automatically commit generated AsciiDoc files"
