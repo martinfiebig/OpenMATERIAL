@@ -25,8 +25,8 @@ jobs:
       run: |
         git checkout deploy
         python3 generate_schema_docs.py
-        git config --global user.name "Martin Fiebig"
-        git config --global user.email "martin.fiebig@parson-europe.com"
+        git config --global user.name "ASAM"
+        git config --global user.email "test@test.com"
         git add ../content/*schema.adoc -f
         git commit -m "Automatically commit generated AsciiDoc files"
         git push
