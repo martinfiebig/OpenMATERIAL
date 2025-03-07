@@ -2,16 +2,7 @@
 name: asamopenmaterial
 # CENTRAL DOCUMENT ONLY!!! Display name of the component. Define only once per component!
 title: ASAM OpenMATERIAL 3D
-version:
-  # Update version number accordingly. This is the version for the main branch
-  main: '1.0.0'
-  master: '1.0.0'
-  v(*)-antora: V$1
-  x-antora-v(*): V$1
-  v(*): V$1
-  V(*): V$1
-  # Update version number accordingly. This is the version for any other activated branch (branch must be added in the generator site.yml!). Schema = 0.0.x-<branch-name> (only works for branches starting with "feature/")
-  (*): 'V1-0-0-$1'
+version: 'draft'
 # CENTRAL DOCUMENT ONLY!!! First page of the component. Define only once per component!
 start_page: specification:index.adoc
 
