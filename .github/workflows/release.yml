@@ -2,6 +2,10 @@
 # Only execute on the deployment-branch, where the different versions of the documentation are tagged.
 name: Upload AsciiDoc-files generated from JSON-files
 on:
+  pull_request:
+    types:
+      - closed
+    branches: [deploy]
   workflow_dispatch:
   # Allows you to run this workflow manually from the Actions tab
 jobs:
