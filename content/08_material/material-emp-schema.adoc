@@ -2,7 +2,7 @@
 
 == metadata
 
-VERSION_V3!! The key meta information about the EMP look-up table.
+VERSION_V3 The key meta information about the EMP look-up table.
 
 
 *Type:* `+object+` +
