@@ -76,7 +76,7 @@
                     "properties": {
                         "surfaceHeightRms": {
                             "type": "number",
-                            "description": "Root mean square of surface height deviations, called RMS-Roughness, being a vertical measure of roughness and given in meters.",
+                            "description": "Root mean square of surface height deviations, called RMS-Roughness, being a vertical measure of roughness and given in meters (m).",
                             "minimum": 0
                         },
                         "surfaceCorrelationLength": {
@@ -107,7 +107,7 @@
                         },
                         "temperature": {
                             "type": "number",
-                            "description": "Temperature of material in Kelvin [K] at which the emissivity is measured.",
+                            "description": "Temperature of material in Kelvin (K) at which the emissivity is measured.",
                             "minimum": 0
                         },
                         "sources": {
@@ -154,9 +154,9 @@
                     "properties": {
                         "density": {
                             "type": "number",
-                            "description": "Density of the material in kg/m^3^. The value shall be in the range of 0 to 25000 (density of Osmium)",
+                            "description": "Density of the material in kg/m^3^. The value shall be in the range of 0 to 25 (density of Osmium)",
                             "minimum": 0,
-                            "maximum": 25000
+                            "maximum": 25
                         },
                         "sources": {
                             "type": "string",
