@@ -154,9 +154,9 @@
                     "properties": {
                         "density": {
                             "type": "number",
-                            "description": "Density of the material in kg/m^3^. The value shall be in the range of 0 to 25 (density of Osmium)",
+                            "description": "Density of the material in kg/m^3^. The value shall be in the range of 0 to 25000 (density of Osmium)",
                             "minimum": 0,
-                            "maximum": 25
+                            "maximum": 25000
                         },
                         "sources": {
                             "type": "string",
