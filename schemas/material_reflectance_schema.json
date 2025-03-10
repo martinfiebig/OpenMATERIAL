@@ -25,7 +25,7 @@
                     "description": "The version number of the material, following semantic versioning (for example, '1.0.0').",
                     "pattern": "^\\d+\\.\\d+\\.\\d+$"
                 },
-                "openMaterialVersion": {
+                "openMaterial3dVersion": {
                     "type": "string",
                     "description": "The version of the ASAM OpenMATERIAL 3D specification used, adhering to semantic versioning (for example, '1.0.0').",
                     "pattern": "^\\d+\\.\\d+\\.\\d+$"
@@ -66,7 +66,7 @@
                 "uuid",
                 "materialVersion",
                 "creationDate",
-                "openMaterialVersion",
+                "openMaterial3dVersion",
                 "copyrights",
                 "license",
                 "authors",
@@ -133,7 +133,7 @@
                                     "number",
                                     "null"
                                 ],
-                                "description": "Polarized plane angle in rad. This is the angle between the plane containing the incident, exit, and normal vector, and the plane of polarization. The value shall be within a range of \\(0\\) to \\(\\pi\\).",
+                                "description": "Polarized plane angle in rad. This is the angle between the plane containing the incident, exit, and normal vector, and the plane of polarization. The plane of polarization contains the direction of propagation and the electric vector. The value shall be within a range of \\(0\\) to \\(\\pi\\).",
                                 "minimum": 0,
                                 "maximum": 3.141593
                             },
