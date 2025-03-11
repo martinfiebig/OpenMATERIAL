@@ -18,8 +18,8 @@ content:
     tags: [v*,V*]
   - url: .
     start_path: .antora
-    tags: [v*]
-    #tags: [v*.0.0]  -> build only full versions
+    tags: [v*.0.0]
+    #tags: [v*]  -> change to this to also build and include minor versions
     branches: [main]
 # end::content[]
 
