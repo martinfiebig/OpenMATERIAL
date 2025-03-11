@@ -18,10 +18,11 @@ content:
     tags: [v*,V*]
   - url: .
     start_path: .antora
-    #tags: [v1.0.0, v2.0.0, v3.0.0]
-    tags: [v*]
-    #tags: [v*.0.0]  -> build only full versions
     branches: [main]
+  - url: .
+    start_path: .antora
+    tags: [v*]
+    branches: [deploy]
 # end::content[]
 
 ui:
