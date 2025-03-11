@@ -3,7 +3,7 @@ name: asamopenmaterial
 # CENTRAL DOCUMENT ONLY!!! Display name of the component. Define only once per component!
 title: ASAM OpenMATERIAL 3D
 version: 
-  v(?<v>+({0..9}).+({0..9}).+({0..9})): $v-release
+  v(?<v>+({0..9}).+({0..9}).+({0..9})): $<v>-release
   main: 'current'
   # Update version number accordingly. This is the version for the main branch
 #  main: '1.0.0'
