@@ -75,7 +75,7 @@
         },
         "reflectionCoefficient": {
             "type": "object",
-            "description": "Reflection coefficient lookup table including relevant meta data. The reflection coefficient is defined as the ration of amplitudes of reflected electromagnetic waves over incident electromagnetic waves \\(\\r = \\E_{\\textrm{r}} / \\E_{\\textrm{i}}\\). This complex value is represented by angle- and wavelength-dependent magnitude and phase values.",
+            "description": "Reflection coefficient lookup table including relevant meta data. The reflection coefficient is defined as the ration of amplitudes of reflected electromagnetic waves over incident electromagnetic waves \\(r = E_{\\textrm{r}} / E_{\\textrm{i}}\\). This complex value is represented by angle- and wavelength-dependent magnitude and phase values.",
             "properties": {
                 "wavelengths": {
                     "type": "array",
