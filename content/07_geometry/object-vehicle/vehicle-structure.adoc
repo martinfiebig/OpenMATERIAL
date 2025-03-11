@@ -1593,7 +1593,7 @@ The coordinate origin of this group is aligned with the ASAM OSI host vehicle co
 This group contains all parts of a wheel, which may consist of the tire, rim, brake caliper, and so on.
 
 The groups' transform shall only be used to implement translational movement of the wheel.
-Rotational movement of the wheel shall be applied simultaneously to the transforms of both the groups'
+Rotational movement of the wheel shall be applied simultaneously to the transforms of both groups'
 child nodes, Grp_Wheel_Steering and Grp_Wheel_Steering_Rotating, whereby the wheels' rolling movement
 shall only be taken into account for the latter (see following chapters for details).
 
