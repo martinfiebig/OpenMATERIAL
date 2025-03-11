@@ -34,7 +34,7 @@ include::08_material/material-schema.adoc[leveloffset=+2]
 include::08_material/material-emp-schema.adoc[leveloffset=+2]
 include::08_material/material-optical-schema.adoc[leveloffset=+2]
 include::08_material/material-brdf-schema.adoc[leveloffset=+2]
-include::08_material/material-reflectance-schema.adoc[leveloffset=+2]
+include::08_material/material-reflection-coefficient-schema.adoc[leveloffset=+2]
 
 :sectnums!:
 [bibliography]

@@ -206,12 +206,12 @@
                         "pattern": ".*_brdf\\.xompt$"
                     }
                 },
-                "reflectanceUris": {
+                "reflectionCoefficientUris": {
                     "type": "array",
-                    "description": "Relative paths to one or multiple property lookup table files with wavelength-dependent reflectance values.",
+                    "description": "Relative paths to one or multiple property lookup table files with wavelength-dependent reflection coefficient values.",
                     "items": {
                         "type": "string",
-                        "pattern": ".*_reflectance\\.xompt$"
+                        "pattern": ".*_reflCoeff\\.xompt$"
                     }
                 },
                 "customProperties": {

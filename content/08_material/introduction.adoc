@@ -26,7 +26,7 @@ There are different kinds of look-up tables:
 - Electromagnetic properties (`*_emp.xompt`) containing complex permeability and permittivity values
 - Optical properties (`*_optical.xompt`) containing complex index of refraction values
 - BRDFs (`*_brdf.xompt`) containing bidirectional reflectance distribution values
-- Reflectance (`*_reflectance.xompt`) containing reflectance values
+- Reflection coefficient (`*_reflCoeff.xompt`) containing reflection coefficient values
 
 [#fig-openmaterial-material-overview]
 .Overview of {THIS_STANDARD} Material file formats and data flow
