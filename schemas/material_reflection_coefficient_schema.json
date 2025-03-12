@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "description": "ASAM OpenMATERIAL 3D Material reflectance look-up table file definition.",
+    "description": "ASAM OpenMATERIAL 3D Material reflection coefficient look-up table file definition.",
     "properties": {
         "metadata": {
             "type": "object",
@@ -57,7 +57,7 @@
                 },
                 "sources": {
                     "type": "string",
-                    "description": "Sources of the reflectance data. Was it measured, simulated, or taken from literature? Multiple sources should be comma-separated."
+                    "description": "Sources of the reflection coefficient data. Was it measured, simulated, or taken from literature? Multiple sources should be comma-separated."
                 }
             },
             "required": [
@@ -73,9 +73,9 @@
                 "sources"
             ]
         },
-        "reflectance": {
+        "reflectionCoefficient": {
             "type": "object",
-            "description": "Reflectance lookup table including relevant meta data.",
+            "description": "Reflection coefficient lookup table including relevant meta data. The reflection coefficient is defined as the ratio of amplitudes of the reflected electromagnetic wave over the incident electromagnetic wave \\(r = E_{\\textrm{r}} / E_{\\textrm{i}}\\). This complex value is represented by angle- and wavelength-dependent magnitude and phase values.",
             "properties": {
                 "wavelengths": {
                     "type": "array",
@@ -88,7 +88,7 @@
                 },
                 "lookupTable": {
                     "type": "array",
-                    "description": "Array of reflectance values, with each item representing a different property. The array shall be sorted based on the columns starting with the first.",
+                    "description": "Array of reflection coefficient values, with each item representing a different property. The array shall be sorted based on the columns starting with the first.",
                     "items": {
                         "type": "array",
                         "items": [
@@ -142,7 +142,7 @@
                                     "number",
                                     "null"
                                 ],
-                                "description": "Amplitude within the linearly polarized plane. The amplitude is given as a relative value compared to an ideal reflector. The value shall be between 0 and 1",
+                                "description": "Magnitude within the linearly polarized plane. The magnitude is given as an absolute relative value compared to an ideal reflector. The value shall be between 0 and 1",
                                 "minimum": 0,
                                 "maximum": 1
                             },
@@ -169,6 +169,6 @@
     },
     "required": [
         "metadata",
-        "reflectance"
+        "reflectionCoefficient"
     ]
 }

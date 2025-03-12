@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "name": "asphalt_brdf_for_radar",
-        "description": "Reflectance properties of asphalt for radar sensor.",
+        "name": "asphalt_reflection_coefficient_for_radar",
+        "description": "Reflection coefficients of asphalt for radar sensor.",
         "uuid": "e9e2a27e-ee53-437e-b578-3b61b7cc47f2",
         "materialVersion": "1.0.0",
         "creationDate": "20240919T101728Z",
@@ -11,7 +11,7 @@
         "authors": ["DIVP"],
         "sources": "measurement"
     },
-    "reflectance": {
+    "reflectionCoefficient": {
         "wavelengths": [0.00365601, 0.00399723],
         "lookupTable": [
             [0.00365601, -1.553343, -1.553343, 0.000000, 0.000000, 6.78751e-10, -0.330338],
