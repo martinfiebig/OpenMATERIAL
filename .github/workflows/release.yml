@@ -28,6 +28,7 @@ jobs:
       working-directory: repo/scripts
       run: |
         git checkout deploy
+        git merge main
         python3 generate_schema_docs.py
         git config --global user.name "AsciiDoc-Generation[bot]"
         git config --global user.email "AsciiDoc@Generation.com"
