@@ -4,7 +4,7 @@ name: asamopenmaterial
 title: ASAM OpenMATERIAL 3D
 version: 
   v(?<v>+({0..99}).+({0..99}).+({0..99})): $<v>
-  deploy: 'current'
+  main: 'current'
 # CENTRAL DOCUMENT ONLY!!! First page of the component. Define only once per component!
 start_page: specification:index.adoc
 
