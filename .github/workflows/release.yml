@@ -35,3 +35,4 @@ jobs:
         git add ../content/*schema.adoc -f
         git commit -m "Automatically commit generated AsciiDoc files"
         git push
+      continue-on-error: true
