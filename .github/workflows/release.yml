@@ -32,7 +32,6 @@ jobs:
         git checkout deploy
         git merge main
         python3 generate_schema_docs.py
-        git add ../content/*schema.adoc -f
+        git add . -f
         git commit -m "Automatically commit generated AsciiDoc files"
         git push
-      continue-on-error: true
