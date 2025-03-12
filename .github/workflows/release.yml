@@ -1,0 +1,36 @@
+# Workflow to push the generated files from JSON to AsciiDoc to the deploy branch.
+# Only execute on push to main
+name: Upload AsciiDoc-files generated from JSON-files
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+  # Allows you to run this workflow manually from the Actions tab
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  
+jobs:
+  build:
+    name: Upload AsciiDoc files generated from JSON-files
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout with submodules
+      uses: actions/checkout@v4
+      with:
+         path: repo
+         fetch-depth: 0 # test if depth in fetch history is required
+         submodules: recursive
+         ssh-key: ${{ secrets.XOM_DEPLOY_KEY }}
+
+    - name: Generate schema asciidoc files and push changes to deploy branch
+      working-directory: repo/scripts
+      run: |
+        git checkout deploy
+        python3 generate_schema_docs.py
+        git config --global user.name "AsciiDoc-Generation[bot]"
+        git config --global user.email "AsciiDoc@Generation.com"
+        git add ../content/*schema.adoc -f
+        git commit -m "Automatically commit generated AsciiDoc files"
+        git push
