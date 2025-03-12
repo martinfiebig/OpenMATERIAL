@@ -27,11 +27,11 @@ jobs:
     - name: Generate schema asciidoc files and push changes to deploy branch
       working-directory: repo/scripts
       run: |
+        git config --global user.name "AsciiDoc-Generation[bot]"
+        git config --global user.email "AsciiDoc@Generation.com"
         git checkout deploy
         git merge main
         python3 generate_schema_docs.py
-        git config --global user.name "AsciiDoc-Generation[bot]"
-        git config --global user.email "AsciiDoc@Generation.com"
         git add ../content/*schema.adoc -f
         git commit -m "Automatically commit generated AsciiDoc files"
         git push
