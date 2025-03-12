@@ -57,5 +57,5 @@ jobs:
       - name: Validate reflection coefficient JSON schemas
         uses: cardinalby/schema-validator-action@v3
         with:
-          schema: ./schemas/material_reflection_coefficient_schema.json
+          schema: ./schemas/material_reflCoeff_schema.json
           file: ./examples/*_reflCoeff.xompt
