@@ -743,7 +743,7 @@ th { border-bottom: 1pt solid black; }
 
 .print-only { display: none !important; }
 
-div.edit-this-page { display: none; }
+div.edit-this-page { display: none !important; }
 
 @page { margin: 1.25cm 0.75cm; }
 
