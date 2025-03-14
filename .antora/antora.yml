@@ -27,6 +27,8 @@ asciidoc: # Sets global AsciiDoc attributes that are applied for every page of t
     reusedir: reuse
     imagesoutdir: ./images/generated_images
     asamBibliography: 'specification:bibliography.bib'
+    generate-attachments: [["attachment$PATH_TO_FILES", "generated/NAME_FOR_ZIP", "clean"]]
+    page-download-links: [["generated/NAME_FOR_ZIP","link-text-for-zip-package"]]
 
 nav:
   - modules/specification/nav-openmaterial.adoc
