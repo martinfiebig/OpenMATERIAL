@@ -18,9 +18,8 @@ content:
     tags: [v*,V*]
   - url: .
     start_path: .antora
+    branches: [main]
     tags: [v*]
-    #tags: [v*.0.0]  -> change to this to only build and publish major versions of the documentation
-    #branches: [main]
 # end::content[]
 
 ui:
