@@ -5,6 +5,7 @@ title: ASAM OpenMATERIAL 3D
 version: 
   release-v(?<v>+({0..99}).+({0..99}).+({0..99})): $<v>
   main: 'current'
+
   # Update version number accordingly. This is the version for the main branch
 #  main: '1.0.0'
 #  master: '1.0.0'
