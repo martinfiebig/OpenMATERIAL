@@ -37,7 +37,7 @@ asciidoc: # Sets global AsciiDoc attributes that are applied for every page of t
     asamBibliography: 'specification:bibliography.bib'
     page-download-links: [["generated/preface.zip","Preface zip"]]
 #    generate-attachments: [["attachment$fuck_all.adoc", "generated/preface.zip", "clean"]]
-    generate-attachments: [["attachments$/", "generated/preface.zip", "clean"]]
+    generate-attachments: [["attachment$/", "generated/preface.zip", "clean"]]
 
 nav:
   - modules/specification/nav-openmaterial.adoc
