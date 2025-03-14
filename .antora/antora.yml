@@ -2,7 +2,10 @@
 name: asamopenmaterial
 # CENTRAL DOCUMENT ONLY!!! Display name of the component. Define only once per component!
 title: ASAM OpenMATERIAL 3D
-version: '3.0.0'
+version: 
+  release-v(?<v>+({0..99}).+({0..99}).+({0..99})): $<v>
+  main: 'current'
+
   # Update version number accordingly. This is the version for the main branch
 #  main: '1.0.0'
 #  master: '1.0.0'
@@ -33,6 +36,8 @@ asciidoc: # Sets global AsciiDoc attributes that are applied for every page of t
     reusedir: reuse
     imagesoutdir: ./images/generated_images
     asamBibliography: 'specification:bibliography.bib'
+    page-download-links: [["generated/test.zip","Test files zip"]]
+    generate-attachments: [["attachment$test_files/", "generated/test.zip", "clean"]]
 
 nav:
   - modules/specification/nav-openmaterial.adoc
