@@ -19,7 +19,7 @@ content:
   - url: .
     start_path: .antora
     branches: [main]
-    tags: [release-v*]
+    tags: [v*]
 # end::content[]
 
 ui:
