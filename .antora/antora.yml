@@ -35,6 +35,7 @@ asciidoc: # Sets global AsciiDoc attributes that are applied for every page of t
     reusedir: reuse
     imagesoutdir: ./images/generated_images
     asamBibliography: 'specification:bibliography.bib'
+    page-download-links: [["generated/ASAM_OpenDRIVE_{page-component-version-hyphenated}_Enterprise_Architect_UML_model.zip","Enterprise Architect UML model"],["generated/ASAM_OpenDRIVE_{page-component-version-hyphenated}_xsd_schema_files.zip","XSD schema files"]]
 
 nav:
   - modules/specification/nav-openmaterial.adoc
