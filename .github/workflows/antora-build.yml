@@ -4,7 +4,9 @@
 name: Publish with Antora to GitHub Pages
 on:
   push:
-    branches: [main]
+    branches: [deploy]
+  release:
+    types: [ published ]
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 concurrency:
@@ -41,11 +43,7 @@ jobs:
          path: repo
          fetch-depth: 0 # test if depth in fetch history is required
          submodules: recursive
-
-    - name: Generate AsciiDoc from JSON
-      working-directory: repo/scripts
-      run: |
-        python3 generate_schema_docs.py
+         ref: deploy
 
     - name: Configure Pages
       uses: actions/configure-pages@v4

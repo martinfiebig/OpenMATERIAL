@@ -91,6 +91,12 @@ def generate_asciidoc_properties(properties: Dict, required_fields: List[str], l
             pattern = escape_special_chars(prop_data['pattern'])
             asciidoc_content += f"\n*Pattern:* `+{pattern}+` +"
 
+        # Add minimum and maximum values
+        if "minimum" in prop_data:
+            asciidoc_content += f"\n*Minimum value:* `+{prop_data['minimum']}+` +"
+        if "maximum" in prop_data:
+            asciidoc_content += f"\n*Maximum value:* `+{prop_data['maximum']}+` +"
+
         # Add required status
         asciidoc_content += f"\n*Required:* {'Yes' if prop_name in required_fields else 'No'}\n\n"
 
@@ -226,6 +232,7 @@ def generate_asciidoc_file(json_schema_path: str, output_path: str):
 
     base_filename = os.path.basename(json_schema_path).replace('_', '-')
     headline = format_main_headline(os.path.splitext(base_filename)[0])
+    headline = headline.replace("reflcoeff", "reflection coefficient")     # This is an exception because of the abbreviation of reflection coefficient in the schema file name
     asciidoc_content = f"= {headline}\n\n"
 
     for field in schema['properties']:
@@ -234,6 +241,7 @@ def generate_asciidoc_file(json_schema_path: str, output_path: str):
         asciidoc_content += generate_asciidoc_main_field(field, schema, is_required, required_fields)
 
     output_filename = f"{os.path.splitext(base_filename)[0]}.adoc"
+    output_filename = output_filename.replace("reflCoeff", "reflection-coefficient")  # This is an exception because of the abbreviation of reflection coefficient in the schema file name
     output_file = os.path.join(output_path, output_filename)
 
     with open(output_file, 'w') as file:

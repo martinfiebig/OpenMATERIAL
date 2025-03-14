@@ -16,6 +16,7 @@ permissions:
 jobs:
   build:
     name: Upload AsciiDoc-files generated from JSON-files
+
     runs-on: ubuntu-latest
     steps:
     - name: Checkout with submodules
