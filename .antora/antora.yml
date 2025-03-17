@@ -3,7 +3,7 @@ name: asamopenmaterial
 # CENTRAL DOCUMENT ONLY!!! Display name of the component. Define only once per component!
 title: ASAM OpenMATERIAL 3D
 version: 
-  v(?<v>+({0..99}).+({0..99}).+({0..99})+*): $<v>
+  v(?<v>+({0..99}).+({0..99}).+({0..99})+(*)): $<v>
   main: 'current'
   (*): 'pull-request'
 
